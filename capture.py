@@ -7,11 +7,11 @@ import seaborn as sns
 device = 'raspberrypi'
 
 # 最初のpcapファイルの読み込みと処理
-samples_1 = decoder(device).read_pcap('pcaps/08.pcap')
+samples_1 = decoder(device).read_pcap('pcaps/113.pcap')
 csi_data_1 = decoder(device).unpack(samples_1['csi'])
 
 # 2つ目のpcapファイルの読み込みと処理
-samples_2 = decoder(device).read_pcap('pcaps/05.pcap')
+samples_2 = decoder(device).read_pcap('pcaps/205.pcap')
 csi_data_2 = decoder(device).unpack(samples_2['csi'])
 
 # CSIデータの振幅（Amplitude）の取得
